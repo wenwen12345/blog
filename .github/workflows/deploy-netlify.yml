@@ -1,0 +1,50 @@
+name: Deploy to Netlify
+
+on:
+    push:
+        branches: [master]
+    pull_request:
+        branches: [master]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        permissions:
+            # Give the default GITHUB_TOKEN write permission to commit and push the
+            # added or changed files to the repository.
+            contents: write
+
+        steps:
+            - uses: actions/checkout@v3
+
+            - name: Cache Hugo resources
+              uses: actions/cache@v3
+              env:
+                  cache-name: cache-hugo-resources
+              with:
+                  path: resources
+                  key: ${{ env.cache-name }}
+
+            - uses: actions/setup-go@v4
+              with:
+                  go-version: "^1.17.0"
+            - run: go version
+
+            - name: Setup Hugo
+              uses: peaceiris/actions-hugo@v2
+              with:
+                  hugo-version: "latest"
+                  extended: true
+
+            - name: Build
+              run: hugo --minify --gc -b https://netlify.albertgo.top
+
+            - name: Push
+              uses: s0/git-publish-subdir-action@develop
+              env:
+                REPO: self
+                BRANCH: netlify # The branch name where you want to push the assets
+                FOLDER: public # The directory where your assets are generated
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # GitHub will automatically add this - you don't need to bother getting a token
+                MESSAGE: "Build: ({sha}) {msg}" # The commit message
