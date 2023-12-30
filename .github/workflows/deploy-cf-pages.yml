@@ -45,6 +45,6 @@ jobs:
               with:
                 apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
                 accountId: 2a29e95bb5eda88bc89b88599efcb708
-                projectName: wen-blog
+                projectName: blog
                 directory: public
                 branch: cf-pages
