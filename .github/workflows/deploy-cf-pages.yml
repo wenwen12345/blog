@@ -38,7 +38,7 @@ jobs:
                   extended: true
 
             - name: Build
-              run: hugo --minify --gc -b https://gh.albertgo.top
+              run: hugo --minify --gc -b https://blog.albertgo.top
 
             - name: Publish to Cloudflare Pages
               uses: cloudflare/pages-action@v1
