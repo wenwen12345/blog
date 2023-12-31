@@ -1,4 +1,4 @@
-name: Deploy to Netlify
+name: Deploy to FTP
 
 on:
     push:
@@ -41,7 +41,7 @@ jobs:
               run: hugo --minify --gc -b https://netlify.albertgo.top
 
             - name: Upload ftp
-              uses: genietim/ftp-action@releases/v4
+              uses: GenieTim/ftp-action@v4.0.1
               with:
                 host: ${{ secrets.FTP_SERVER }}
                 user: ${{ secrets.FTP_USERNAME }}
