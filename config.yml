@@ -88,7 +88,7 @@ outputFormats:
 
 menu:
   main:
-    - name: Posts
+    - name: 文章
       url: /posts/
       weight: 1
     - name: Notes
@@ -97,27 +97,12 @@ menu:
     - name: Newsletter
       url: /newsletter/
       weight: 3
-    - name: Archives
+    - name: 归档
       url: /archives/
       weight: 4
-
 languages:
-  zh:
-    languageName: "中文"
-    languageCode: zh-CN
-    weight: 1
-    title: "wenwen12345的博客"
-    params:
-      homeInfoParams:
-        Title: "欢迎来到我的博客"
-        Content: |
-          欢迎访问我的个人博客。
-
-          - 这是一个使用 Hugo 和 PaperModX 主题搭建的博客
-          - 在这里我会分享一些技术文章和个人笔记
-
-      description: "一个记录生活与技术的博客"
-
+  en:
+    languageName: "English"
 markup:
   goldmark:
     renderer:
