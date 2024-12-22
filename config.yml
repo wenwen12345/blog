@@ -69,7 +69,7 @@ params:
   #    shortname: reorx
     remark42:
       url: https://remark42.liaowen.us.kg
-      site: blog.liaowen.us.kg
+      site: https://blog.liaowen.us.kg
   #  telegramWidget:
   #    channel: reorx_share
   #    accentColor: "9077e1"
