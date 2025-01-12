@@ -11,4 +11,4 @@ everse_proxy ip:port
  header /_app/immutable/* Cache-Control "max-age=2592000"
  header /api/models Cache-Control "max-age=2592000"
 ```
-就可以实现加速访问，模型改变多久把下面的删了
+就可以实现加速访问，模型改变多的把下面的删了，没删的话要更改模型就打开 /api/models 清除缓存就好了
