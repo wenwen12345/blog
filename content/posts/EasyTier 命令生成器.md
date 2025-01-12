@@ -8,7 +8,7 @@ draft: false
 
 [easyTier 命令生成器](https://etc.liaowen.us.kg)
 
-已下是源码
+以下是源码
 ```html
 <script setup>
 import { NButton, NFlex, NButtonGroup, NConfigProvider, NGlobalStyle, NAutoComplete, NInput, NSelect, NCode, NH1 } from 'naive-ui'
