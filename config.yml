@@ -33,23 +33,6 @@ params:
   ShowWordCount: true
   ShowCodeCopyButtons: true
   ShowPostNavLinks: true
-  Email: hello@example.com
-
-  socialIcons:
-    - name: github-simple
-      url: "https://github.com/reorx"
-    - name: twitter-simple
-      url: "https://twitter.com/novoreorx"
-    - name: telegram-simple
-      url: "https://t.me/reorx_share"
-    - name: rss-simple
-      url: "feed.xml"
-    - name: gmail
-      url: email
-
-  socialAccounts:
-    twitter:
-      username: novoreorx
 
   homeInfoParams:
     Title: "PaperModX"
@@ -91,15 +74,12 @@ menu:
     - name: 文章
       url: /posts/
       weight: 1
-    - name: Notes
-      url: /notes/
+    - name: 搜索
+      url: /search/
       weight: 2
-    - name: Newsletter
-      url: /newsletter/
-      weight: 3
     - name: 归档
       url: /archives/
-      weight: 4
+      weight: 3
 languages:
   en:
     languageName: "English"
