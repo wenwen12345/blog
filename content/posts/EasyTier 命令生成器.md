@@ -1,14 +1,18 @@
 ---
-title: "EasyTier 命令生成器"
-date: 2025-01-12T20:01:11+08:00
+abbrlink: ''
+categories: []
+date: '2025-01-12T20:01:11+08:00'
 draft: false
+tags: []
+title: EasyTier 命令生成器
+updated: '2025-03-08T19:29:05.911+08:00'
 ---
-
 简单写了一个 EasyTier 的命令和 systemd 配置的生成器，总之就是不用翻文档了
 
-[easyTier 命令生成器](https://etc.liaowen.us.kg)
+[easyTier 命令生成器](https://etc.wenwen12345.top)
 
 以下是源码
+
 ```html
 <script setup>
 import { NButton, NFlex, NButtonGroup, NConfigProvider, NGlobalStyle, NAutoComplete, NInput, NSelect, NCode, NH1 } from 'naive-ui'
