@@ -2,7 +2,6 @@ title: wenwen12345's Blog
 baseURL: "https://blog.wenwen12345.top/"
 theme: PaperModX
 
-enableRobotsTXT: true
 enableEmoji: true
 
 params:
